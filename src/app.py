@@ -22,7 +22,7 @@ engine=connect()
 if engine is None:
     exit()
 
-#borrar las tablas ya existentes
+#borrar las tablas ya existentes 
 with engine.connect() as con:
     con.execute(text("""
 DROP TABLE book_authors;
